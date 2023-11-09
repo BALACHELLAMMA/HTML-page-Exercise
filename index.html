@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Page </title>
+    <link rel="stylesheet" href="style.css"></link>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <div class="upper_container">
+        
+            <div class="welcome_container">
+              <p>Welcome to Clicon online eCommerce store.</p>
+            </div>
+            <div class="follow_us_container">
+                <p>Follow us:</p>
+                <div class="icon_container">
+                    <img id="twitter" src="img/twitter_icon.png" alt="twitter_icon"/>
+                    <img id="fb" src="img/fb_icon.png" alt="fb_icon"/>
+                    <img id="pininterest" src="img/pininterest_icon.png" alt="pininterest_icon"/>
+                    <img id="reddit" src="img/reddit_icon.png" alt="discord_icon"/>
+                    <img id="youtube" src="img/youtube_icon.png" alt="youtube_icon"/>
+                    <img id="instagram" src="img/instagram_icon.png" alt="instagram_icon"/>
+                </div>
+                <div class="vertical_line_container"></div>
+                <select id="language">
+                    <option>Eng</option>
+                </select>  
+                <select id="currency">
+                    <option>USD</option>
+                </select>           
+            </div>
+        </div>
+        <div class="lower_container">
+           <div class="logo_container">
+              <img id="logo" src="img/logo.png" alt="clicon_logo"/>
+              <p>CLICON</p>
+           </div> 
+           <div class="search_box_container">
+              <input type="text"  id="input_box" placeholder="Search for anything..."/>
+              <button id="search_btn">
+              <img src="img/search_icon (2).png"/>
+              </button>
+           </div>
+           <div class="profile_container">
+                  <img src="img/cart_icon.png" alt="cart_icon"/>
+                  <span>2</span>
+               <img src="img/like_icon.png" alt="like_icon"/>
+               <img src="img/avatar_icon.png" alt="avatar_icon"/>
+           </div>
+        </div>
+    </header>
+    <nav class="upper_nav">
+        <div class="quick_links_container">
+            <div class="all_category"><select><option>All Category</option></select></div>
+            <div class="track_order_container"><img src="img/location_icon.png" alt="track order"/><a href="#">Track Order</a></div>
+            <div class="compare_container"><img src="img/compare_icon.png" alt="compare"/><a href="#">Compare</a></div>
+            <div class="customer_support_container"><img src="img/customer_support_icon.png" alt="customer support"/><a href="#">Customer Support</a></div>
+            <div class="need_help_container"><img src="img/need_help_icon.png" alt="need help"/><a href="#">Need Help</a></div>
+        </div>    
+        <div class="contact">
+           <img src="img/contact_icon.png" alt="contact"/>
+           <p>+1-202-555-0104</p>
+        </div>
+    </nav>
+    <nav class="lower_nav">
+       <div class="home">
+         <img class="home_img"  src="img/home_icon.png" alt="home"/>
+         <p>Home</p>
+         <img class="arrow" src="img/forward_arrow_icon.png" alt="forward_arrow"/>
+       </div>
+
+       <div class="shopping_cart">
+          <p>Shopping Card</p>
+          <img class="arrow" src="img/forward_arrow_icon.png" alt="forward_arrow"/>
+       </div>
+
+       <div class="check_out">
+          <p>Checkout</p>
+       </div>
+    </nav>
+    <div class="hero_section">
+       <div class="billing_information">
+          <form>
+             <h4>Billing Information</h4>
+            <div class="names_container">
+             <div class="user_name_container">
+                <p>User name</p>
+                <div class="input_container">
+                   <input type="text" placeholder="First name"/>
+                   <input type="text" placeholder="Last name"/>
+                </div>
+             </div>
+             <div class="company_name_container">
+                <p>Company Name <span>(Optional)</span></p>
+                <input type="text"/>
+             </div>
+            </div> 
+            <div class="address_container">
+              <p>Address</p>
+              <input type="text"/>
+            </div>
+            <div class="sub_address_container">
+                 <div class="country">
+                    <p>Country</p>
+                    <select><option>Select</option></select>
+                 </div>
+                 <div class="state">
+                    <p>Region/State</p>
+                    <select><option>Select</option></select>
+                 </div>
+                 <div class="city">
+                    <p>City</p>
+                    <select><option>Select</option></select>
+                 </div>
+                 <div class="zipcode">
+                    <p>Zip Code</p>
+                    <input type="text"/>
+                 </div>
+            </div>
+            <div class="email_phone_no_container">
+               <div class="email_container">
+                  <p>Email</p>
+                  <input type="text"/>
+               </div>
+               <div class="phone_no_container">
+                <p>Phone Number</p>
+                <input type="text"/>
+             </div>
+            </div>
+            <div class="check_box">
+               <input type="checkbox"/>
+               <p>Ship into different address</p>
+            </div>
+            <div class="payment_container">
+              <div class="heading">   
+                <h5>Payment Option</h4>
+              </div> 
+              <div class="payment_method">
+                 <div class="cash_on_delivery">
+                    <img src="img/dollar_icon.png" alt="$"/>
+                    <p>Cash on Delivery</p>
+                    <label id="payment_type"><input type="radio" name="payment_method" /></label>
+                 </div>
+                 <div class="vertical_line">
+
+                 </div>
+                 <div class="venmo">
+                    <img src="img/venmo_icon.png" alt="venmo"/>
+                    <p>Venmo</p>
+                    <input type="radio" name="payment_method"/>
+                 </div>
+                 <div class="vertical_line">
+                </div>
+                 <div class="paypal">
+                    <img src="img/paypal_icon.png" alt="paypal"/>
+                    <p>Paypal</p>
+                    <input type="radio" name="payment_method"/>
+                 </div>
+                 <div class="vertical_line">
+                 </div>
+                 <div class="amazon_pay">
+                    <img src="img/amazon_icon.png" alt="amazon pay"/>
+                    <p>Amazon Pay</p>
+                    <input type="radio" name="payment_method"/>
+                 </div>
+                 <div class="vertical_line">
+                </div>
+                 <div class="debit_credit_card">
+                    <img src="img/card_icon.png" alt="debit/credit card"/>
+                    <p>Debit/Credit Card</p>
+                    <input type="radio" name="payment_method"/>
+                 </div>
+
+              </div> 
+              <div class="card_details">
+                  <div class="card_name">
+                     <p>Name on Card</p>
+                     <input type="text"/>
+                  </div>
+                  <div class="card_number">
+                    <p>Card Number</p>
+                    <input type="text"/>
+                 </div> <div class="expiry_ccv">
+                    <div class="expiry_date">
+                        <p>Expiry Date</p>
+                        <input type="text" placeholder="DD/YY"/>
+                    </div>
+                    <div class="ccv">
+                        <p>CCV</p>
+                        <input type="text"/>
+                    </div>
+                 </div>
+              </div>
+            </div>
+            <div class="additional_information">
+              <h4>Additional Information</h4>
+              <div class="order_notes">
+                <p>Order Notes <span>(Optional)</span></p>
+                <input type="text" placeholder="Notes about your order,e.g.special notes for delivery"/>  
+            </div>
+            </div>
+          </form>
+       </div>
+       <div class="order_summary">
+             <h4>Order Summary</h4>
+             <div class="product_detail">
+                <img src="img/tv_icon.png" alt="tv"/>
+                <div class="product_desc">
+                    <p>Canon EOS 1500D DSLR Camera Body+ 18-...</p> 
+                    <p>1 x <span>$70</span></p>
+                </div>
+             </div>
+             <div class="product_detail">
+                <img src="img/headphone-icon.png" alt="headphones"/>
+                <div class="product_desc">
+                    <p>Wired Over-Ear Gaming Headphones with U...</p> 
+                    <p>3 x <span>$250</span></p>
+                </div>
+             </div>
+             <div class="subtotal_container">
+               <p class="subtotal">Sub-total</p>
+               <p>$320</p>
+             </div>
+             <div class="shipping_container">
+                <p class="shipping">Shipping</p>
+                <p>Free</p>
+             </div>
+             <div class="discount_container">
+                <p class="discount">Discount</p>
+                <p>$24</p>
+             </div>
+             <div class="tax_container">
+                <p class="tax">Tax</p>
+                <p>$61.99</p>
+             </div>
+             <div class="horizontal_line">
+             </div>
+             <div class="total">
+                <p>Total</p>
+                <p>$357.99 USD</p>
+             </div>
+             <button>
+                 PLACE ORDER
+                <img src="img/order_next_icon.png"/>
+             </button>
+       </div>
+    </div>
+    <footer>
+        <div class="upper_footer_container">
+            <div class="address_box">
+                <div class="logo_container">
+                    <img id="logo" src="img/logo_icon_orange.png" alt="clicon_logo"/>
+                    <p>CLICON</p>
+                </div>
+                <div class="address">
+                   <div class="customer_support"> 
+                     <p>Customer Supports:</p>
+                     <a href="tel:(629) 555-0129" class="phone_no">(629) 555-0129</a>
+                   </div>
+                   <div class="sub_address">
+                    <p>4517 Washington Ave.</p>
+                    <p>Manchester, Kentucky 39495</p>
+                   </div> 
+                    <a href="mailto:info@kinbo.com" class="email">info@kinbo.com</a>
+                </div>
+            </div>
+            <div class="top_category">
+                <h6>TOP CATEGORY</h6>
+                <a href="#">Computer & Laptop</a>
+                <a href="#">SmartPhone</a>
+                <a href="#">Headphone</a>
+                <div class="accessories">  
+                    <div></div>                  
+                    <p>Accessories</p>
+                </div>
+                <a href="#">Camera & Photo</a>
+                <a href="#">Tv & Homes</a>
+                <div class="browse_products">
+                    <p>Browse All Product</p>
+                    <img src="img/browse_products_icon.png"/>
+                </div>
+
+            </div>
+
+            <div class="quick_links">
+                <h6>QUICK LINKS</h6>
+                <a href="#">Shop Product</a>
+                <a href="#">Shopping Cart</a>
+                <a href="#">Wishlist</a>
+                <a href="#">Compare</a>
+                <a href="#">Track Order</a>
+                <a href="#">Customer Help</a>
+                <a href="#">About US</a>
+
+            </div>
+
+            <div class="download_app">
+                <h6>DOWNLOAD APP</h6>
+                <button class="play_store_btn">
+                    <div class="btn_container">
+                        <img src="img/playstore_icon.png" alt="play store"/>
+                        <div class="btn_info">
+                          <p class="get_it_now">Get it now</p>
+                          <p class="google_play">Google Play</p>
+                       </div>
+                    </div>   
+                </button>
+                <button class="app_store_btn">
+                    <div class="btn_container">
+                        <img src="img/apple_icon.png" alt="app store"/>
+                        <div class="btn_info">
+                          <p class="get_it_now">Get it now</p>
+                          <p class="app_store">App Store</p>
+                       </div>
+                    </div>   
+                </button>
+            </div>
+
+            <div class="popular_tag">
+                <h6>POPULAR TAG</h6>
+                <!-- <div class="popular_tag_container"> -->
+                    <div class="tag1">
+                        <button>Game</button>
+                        <button>iPhone</button>
+                        <button>TV</button>
+                        <button>Asus Laptops</button>
+                    </div>
+                    <div class="tag2">
+                        <button>Macbook</button>
+                        <button>SSD</button>
+                        <button class="graphics_card">Graphics Card</button>
+                    </div>
+                    <div class="tag3">
+                        <button>Power Bank</button>
+                        <button>Smart TV</button>
+                        <button>Speaker</button>
+                    </div>
+                    <div class="tag4">
+                        <button>Tablet</button>
+                        <button>Microwave</button>
+                        <button>Samsung</button>
+                    </div>
+                <!-- </div> -->
+            </div>
+        <!-- </button> -->
+        </div>
+        </div>
+        <div class="lower_footer_container">
+            <p>kinbo-eCommerce Template© 2021. Design by Templatecookie</p>
+        </div>
+    </footer>
+    
+</body>
+</html>
